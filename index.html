@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#1b335f">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
   <meta name="description" content="Christian Tech Institute of Texas — a Christian higher education institution in pre-launch development at the intersection of faith, technology, media and leadership.">
   <title>Christian Tech Institute of Texas | Pre-Launch</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,12 +24,8 @@
 
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="CTIT home">
-        <span class="brand-mark">CT</span>
-        <span class="brand-copy">
-          <strong>CHRISTIAN TECH</strong>
-          <small>INSTITUTE OF TEXAS</small>
-        </span>
+      <a class="brand brand-logo" href="#top" aria-label="Christian Tech Institute of Texas home">
+        <img src="logo-ctit.svg" alt="Christian Tech Institute of Texas">
       </a>
 
       <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
@@ -222,7 +220,7 @@
         </div>
         <div class="signup reveal">
           <p>Join the CTIT Founding List to receive institutional updates, program announcements, events and notification when admissions become available.</p>
-          <form id="foundingForm">
+          <form id="foundingForm" data-webhook-url="https://n8n-n8n.ltdnzr.easypanel.host/webhook/b4d5a016-1a1b-496c-ab33-11d51f1194a0" novalidate>
             <label>
               <span>FIRST NAME</span>
               <input type="text" name="name" placeholder="Your name" required>
@@ -231,9 +229,9 @@
               <span>EMAIL ADDRESS</span>
               <input type="email" name="email" placeholder="you@example.com" required>
             </label>
-            <button class="btn btn-gold" type="submit">Join the Founding List <span>↗</span></button>
+            <button class="btn btn-gold" type="submit"><span class="button-label">Join the Founding List</span> <span class="button-icon">↗</span></button>
             <small>Joining the list is not an application for admission and does not guarantee future admission.</small>
-            <div class="form-message" role="status"></div>
+            <div class="form-message" role="status" aria-live="polite"></div>
           </form>
         </div>
       </div>
@@ -242,9 +240,8 @@
 
   <footer>
     <div class="container footer-top">
-      <a class="brand footer-brand" href="#top">
-        <span class="brand-mark">CT</span>
-        <span class="brand-copy"><strong>CHRISTIAN TECH</strong><small>INSTITUTE OF TEXAS</small></span>
+      <a class="brand footer-brand footer-logo" href="#top" aria-label="Christian Tech Institute of Texas">
+        <img src="logo-ctit.svg" alt="Christian Tech Institute of Texas">
       </a>
       <div class="footer-links">
         <a href="#about">About</a>

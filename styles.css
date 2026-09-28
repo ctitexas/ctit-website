@@ -194,3 +194,56 @@ footer{background:var(--navy);color:#fff;padding:55px 0 28px}
   *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
 }
+
+
+/* v2 — reference-led institutional refinements */
+.brand-logo img{display:block;width:190px;height:auto;max-height:54px}
+.site-header{background:rgba(255,255,255,.98)}
+.nav-wrap{gap:20px}
+.hero{min-height:660px;background:
+  linear-gradient(90deg,rgba(14,32,65,.96) 0%,rgba(14,32,65,.88) 48%,rgba(14,32,65,.76) 100%),
+  radial-gradient(circle at 80% 30%,rgba(200,176,129,.15),transparent 36%),
+  #0e2041}
+.hero-grid-bg{opacity:.48}
+.hero h1{max-width:760px}
+.hero-lead{max-width:540px}
+.intersection,.status-section,.founding-list{background:#fff}
+.institution-section{background:#f3f3f1}
+.program-section,.manifesto,.transparency,footer{background:#1b3b6d}
+.manifesto{background:#183761}
+.texas-section{background:#c8b081}
+.btn{transition:transform .2s ease,filter .2s ease}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.03)}
+.site-nav a:not(.nav-cta){position:relative}
+.site-nav a:not(.nav-cta):after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;background:#c8b081;transition:right .2s ease}
+.site-nav a:not(.nav-cta):hover:after{right:0}
+
+/* Official CTIT logo. Footer uses a distinct light/gold treatment without altering the source SVG. */
+.footer-logo img{
+  display:block;width:225px;height:auto;
+  filter:brightness(0) invert(1) sepia(.18) saturate(.6) hue-rotate(355deg) brightness(1.12);
+  opacity:.94
+}
+.footer-brand .brand-mark{border:0}
+.footer-top{align-items:start}
+
+/* Webhook form feedback */
+.signup input:focus{box-shadow:0 1px 0 #c8b081}
+.signup button[disabled]{opacity:.62;cursor:wait;transform:none}
+.form-message{padding:0;transition:.2s ease}
+.form-message.is-success,.form-message.is-error{margin-top:16px;padding:12px 14px;border-left:3px solid}
+.form-message.is-success{background:rgba(27,51,95,.06);border-color:#1b335f;color:#1b335f}
+.form-message.is-error{background:#fff1f0;border-color:#a53a34;color:#7a2c27}
+
+@media (max-width:759px){
+  .brand-logo img{width:150px;max-height:45px}
+  .prelaunch-inner{font-size:8px;letter-spacing:.08em}
+  .prelaunch-inner a{white-space:nowrap}
+  .hero{min-height:720px}
+  .hero h1{font-size:42px}
+  .footer-logo img{width:190px}
+}
+@media (min-width:1024px){
+  .brand-logo img{width:215px}
+  .site-nav{gap:26px}
+}
