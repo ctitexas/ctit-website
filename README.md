@@ -1,30 +1,33 @@
-# CTIT Institutional Landing Page v2
+# CTIT Landing — Modern Brand Edition
 
-Files:
-- index.html
-- styles.css
-- script.js
-- logo-ctit.svg (official uploaded CTIT logo)
+This build preserves the exact structure of the attached landing page.
+
+## What was NOT changed
+- Section order
+- Page content
+- Navigation structure
+- HTML block structure
+- Existing JavaScript behavior
+- Existing n8n webhook configuration
+- Official CTIT logo
+- Official favicon
+
+## What was redesigned
+Only the visual system:
+- `#0e2041` — primary institutional navy
+- `#004ba0` — digital/technology blue
+- `#ffffff` — canvas and contrast
+- `#b29e77` — institutional gold
+
+The redesign adds:
+- stronger editorial hierarchy
+- modern grid/pattern treatments
+- cleaner mobile-first spacing
+- subtle glass/detail effects
+- brand-color hover states
+- more contemporary status/timeline treatments
+- alternate official logo colorway in the footer
 
 ## Webhook
-The landing page is already configured to POST to:
-
-`https://n8n-n8n.ltdnzr.easypanel.host/webhook/b4d5a016-1a1b-496c-ab33-11d51f1194a0`
-
-The form sends JSON by POST:
-- source
-- form
-- name
-- email
-- submitted_at
-- page_url
-- referrer
-- user_agent
-
-The UI displays success for HTTP 2xx and an error message for network/non-2xx responses.
-
-If the webhook is on another domain, it must allow CORS requests from ctitexas.org.
-
-## Logo
-The header uses the official uploaded SVG directly.
-The footer uses the same official SVG with a CSS light/gold treatment for the dark footer.
+The original configured webhook was preserved:
+https://n8n-n8n.ltdnzr.easypanel.host/webhook/b4d5a016-1a1b-496c-ab33-11d51f1194a0
